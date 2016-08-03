@@ -9,5 +9,11 @@
 import Foundation
 
 class Album {
+    private(set) var album:String!
+    private(set) var year:String!
     
+    init(artistAlbum:String,albumYear:String) {
+        self.album = "Album:  \n  \(artistAlbum)"
+        self.year = "Released in:  \(albumYear)"
+    }
 }
